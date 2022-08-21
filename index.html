@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+  }
+
+  body {
+    max-width: 1600px;
+    background-color: black;
+  }
+
+  .flex-container {
+    display: flex;
+    margin: auto;
+    margin-top: 150px;
+    padding: 25px;
+    width: 700px;
+    height: 350px;
+    box-sizing: border-box;
+    background-color: rgb(97, 94, 94);
+  }
+
+.item-1 {
+  position: relative;
+    width: 45%;
+    height: 100%;
+    background-color: rgb(24, 204, 180);
+    border: 10px solid rgb(97, 94, 94);;
+    color: rgb(97, 94, 94);;
+  }
+
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+  }
+ 
+  .flex-thumb {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-color: rgb(24, 204, 180);
+  }
+
+  .flex-item {
+    border: 10px solid rgb(97, 94, 94);
+    height: 33.33%; 
+  }
+
+  .item-2 {
+    align-self: start;
+    width: 100%;
+  }
+
+  .item-3 {
+    width: 50%;
+  }
+
+  .item-4 {
+    width: 50%;
+  }
+
+  .item-5 {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item-1">
+      <h3>Flexbox</h3>
+    </div>
+    <div  class="flex-thumb">
+    <div class="flex-item item-2">
+    </div>
+    <div class="flex-item item-3">
+    </div>
+    <div class="flex-item item-4">
+    </div>
+    <div class="flex-item item-5">
+    </div>
+   </div>
+   </div>
+</body>
+</html>
